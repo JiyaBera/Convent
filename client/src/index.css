@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Volkhov:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: #fafafa;
+  font-family: Poppins;
+}
+
+button.primary{
+  @apply text-white py-2 px-4 bg-primary cursor-pointer ring-1 ring-primary rounded font-bold hover:bg-white hover:shadow-lg duration-75 hover:ring-primarydark hover:text-primary;
+}
+button.secondary{
+  @apply flex items-center gap-2 text-primary py-2 px-4 bg-primarylight cursor-pointer ring-1 font-bold ring-primarylight rounded  hover:bg-primarydark hover:shadow-lg duration-75 hover:ring-primarydark hover:text-white;
+}
+div.input{
+  @apply flex bg-background rounded w-full py-2.5 px-4 gap-4 items-center ;
+}
+input.input-et{
+  @apply text-base bg-inherit text-fontprimary text-fontprimary outline-none w-full;
+}
+
+.custom-list {
+  list-style-type: none;
+  padding-left: 2.0em; 
+}
+
+.custom-list li:before {
+  content: "•"; 
+  font-size: 17px;
+  position: absolute;
+  margin-left: -1.5em; 
+}
+
+.truncate-text {
+  display: -webkit-box;
+  -webkit-line-clamp:3 ; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+/* convent global.css */
+
+:root {
+  --toastify-color-light: #f7f8fc;
+  --toastify-color-dark: #444444;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #00b25a;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #ef476f;
+  --toastify-font-family: 'Poppins', 'serif';
+}
+
+.bg-bleed {
+  box-shadow: 0 0 0 100vmax #f7f8fc;
+  clip-path: inset(0 -100vmax);
+}
+
+.bg-bleed-lightBlue {
+  box-shadow: 0 0 0 100vmax #eff0f6;
+  clip-path: inset(0 -100vmax);
+}
+
+.Toastify__toast {
+  padding-inline: 1rem;
+  border-radius: 0.75rem;
+}
+
+.Toastify__toast-container {
+  top: 10vh;
+}
+
+.Toastify__close-button {
+  font-size: 25rem;
+  align-self: center;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
